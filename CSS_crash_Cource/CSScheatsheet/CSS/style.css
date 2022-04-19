@@ -1,0 +1,193 @@
+body{
+    background-color:#f4f4f4;
+    color:#808080;
+    font-family: Arial, Halvetica, sans-serif;
+    font-size:20px;
+    font-weight:normal;
+    /*same as above*/
+    font: normal 20px Arial, Halvetica, sans-serif;
+    line-height:1.3em;
+    margin:0;
+}
+a{
+    text-decoration:none;
+    color:#000;
+}
+
+a:hover{
+    color:red;
+}
+
+a:active{
+    color:forestgreen;
+}
+
+a:visited{
+    
+}
+
+.container{
+    width:80%;
+    margin:auto;
+}
+
+.clr{
+    clear:both;
+}
+
+.block {
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing:border-box;
+}
+
+
+.button {
+    align-self: center; /* Кака да го подравня в средата на полето*/
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 45%; /* По този начин си е баси налучкването*/
+}
+.button:hover{
+    background:red;
+    color:#fff;
+}
+.box-1 {
+    background-color: #333333;
+    color: #fff;
+    border-right: red 15px solid;
+    border-top: #6b0a45 5px solid;
+    border-bottom: #6b0a45 5px solid;
+    border-left: red 5px solid;
+    border-left-style:dotted;
+    padding:7%;
+    margin: 2%
+}
+.box-1 h1{
+    font-family:Tahoma;
+    font-weight:800;
+    font-style:oblique;
+    text-decoration:underline;
+    text-transform:fullsize-kana uppercase;
+    letter-spacing:0.3em;
+    word-wrap:hyphenate;
+}
+.box-2{
+    border:dotted 10px #808080;
+    padding: 5%;
+    margin:2% 0
+}
+.categories{
+    border:1px #ccc solid;
+    padding:10px;
+    border-radius:15px;
+    margin:40px;
+    padding:10px;
+}
+.categories h2{
+    text-align:center;
+}
+.categories ul{
+    padding:0;
+    list-style:none;
+}
+.categories li{
+    /*тук не бачйа border-buttom-color*/
+    padding-bottom:8px;
+    border-bottom:1px;
+    border-bottom-color:darkred;
+    list-style-image: url('../images/check.png');
+}
+.my-form{
+    background-color:azure;
+    padding:20px;
+    border-radius:15px;
+}
+.my-form .form-group{
+    padding-bottom:15px;
+}
+.my-form label{
+    display:block
+}
+.my-form input[type="text"], .my-form textarea{
+    padding:8px;
+    width:100%;
+    border-radius:20%;
+}
+
+#main-block {
+    float: left;
+    width: 70%;
+    padding:15px;
+    box-sizing: border-box;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    background-color:#333;
+    color:#fff;
+    padding:15px;
+    box-sizing:border-box;
+    
+}
+
+.p-box {
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 20px;
+    position: relative;
+    background-image: url('../images/bgimage.jpg');
+    background-position:center center
+}
+
+.p-box h1{
+    position:absolute;
+    top:40px;
+    left:200px;
+    
+}
+
+.p-box h2{
+    position:absolute;
+    bottom:100px;
+    right:40px;
+}
+
+.fix-me{
+    position:fixed;
+    top:60px;
+    left:10px;
+}
+
+.my-list li:first-child{
+    background:red;
+}
+
+.my-list li:last-child {
+    background: blue;
+}
+
+.my-list li:nth-child(6) {
+    background: yellow;
+}
+/* 
+    this is not global an it will apply only for the button in the "my-form"
+    .my-form input[type="submit"] {
+        align-self: center; /* Кака да го подравня в средата на полето*/
+background-color: #333;
+color: #fff;
+padding: 10px 15px;
+border: none;
+margin-top: 20px;
+margin-left: 45%; /* По този начин си е баси налучкването*/
+}
+*/
+
+
