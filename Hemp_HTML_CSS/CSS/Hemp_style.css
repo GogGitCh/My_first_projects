@@ -1,0 +1,103 @@
+body{
+    background-color:bisque;
+    color:#555;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    line-height:1.6em;
+    margin:0px;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+#main-header {
+    background-image: url(../images/Main_page_Heading.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    min-height:550px;
+    margin-bottom:5px;
+    color: #ff6a00;
+   
+}
+
+#main-header h1{
+    font-size:2.5em;
+    line-height:1em;
+    color:#134b3f;
+    text-align:center;
+}
+
+#main-header p{
+        color: #134b3f;
+        text-align: center;
+        line-height:0.5em;
+}
+
+#navbar{
+    background-color:#134b3f;
+    color:#fff;    
+}
+
+#navbar ul{
+    padding:0;
+    list-style:none;
+    text-align:end;
+}
+
+#navbar li{
+    display:inline;
+}
+
+#navbar a{
+    color:#fff;
+    text-decoration:none;
+    text-align:center;
+    padding-right:20px; 
+}
+
+/*Това не ще да бачка - идеята е да отдели първите ти опции от менюто в дясната част*/
+
+#navbar .nav-bar-menu li:nth-child(3){
+    padding-right:400px;
+    color:red;
+
+}
+
+#showcase{
+    color:#134b3f;
+}
+
+#showcase h3{
+    text-align:center;
+}
+
+#main p{
+    line-height:1.1em;
+}
+
+#sidebar .hemp-block{
+    float:right;
+}
+
+#sidebar img{
+    max-width:200px;
+}
+
+#main-footer{
+    background-color:#0c352d;
+    color:white;
+    padding:15px;    
+}
+
+#main-footer p{
+    text-align:center;
+}
+
+#main-footer a{
+    
+    text-align:center;
+}

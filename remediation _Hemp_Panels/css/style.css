@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    color: var(--logo-green);
+}
+body h1 {
+    margin-top: 6rem;
+    text-align: center;
+}
+h2 {
+    font-size: 3rem;
+}
+
+hr {
+    
+    width: 70%;
+    margin: auto;
+    margin-top: 12rem;
+}
+
+:root {
+    --hemp-green: #BAA566;
+    --logo-green: #6B896A;
+    --dark-green: #495B48;
+
+}
+
+@font-face {
+    font-family: 'Arial Rounded MT Bold','Myriad Pro';
+    src:url(/fonts/ARLRDBD.TTF) format("TTF") /* този фонт не съм го поставил като хората и логото не излиза добре*/
+}
+
+html {
+    font-size: 62.5;
+}
+
+/* Nav Bar*/
+nav {
+    background-color: var(--hemp-green);
+    box-shadow: 0rem 0rem 1.3rem 0.35rem var(--dark-green);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 2.5rem;
+    width: 85%;
+    border-radius: 3.5rem;
+}
+
+#logo {
+    width: 13vw;
+    margin: 0.7rem 0.2rem 0.6rem 0.5rem;
+    
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: var(--dark-green);
+    list-style: none;
+    letter-spacing: 0.06rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-shadow: 0rem 0rem 0.5rem white;
+    margin: 0 1rem 0 1rem;
+
+}
+
+#log-in {
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+/* Nav Bar*/
+
+/* Hero Slider
+
+
+.slide-container {
+    margin-right: auto ;
+    margin-left: auto;
+    margin-top: 2.5rem;
+    width: 1024px;
+    height: 533px;
+    border-radius: 0.7rem;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: inset 0 0 2rem 2rem var(--dark-green); 
+}
+
+.image-container {
+    width: 8192px;
+    height: 533px;
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+}
+
+.slider-image {
+    float: left;
+    padding: 0;
+    margin: 0; 
+
+}
+
+.button-container {
+    
+    top:-4rem;
+    position: relative;
+}
+
+.slider-button {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+
+}
+
+slider-image-1 :target ~ .image-container {
+    left: 0px;
+}
+
+slider-image-2 :target ~ .image-container {
+    left: -1024px;
+}
+
+slider-image-3 :target ~ .image-container {
+    left: -2048px;
+}
+
+slider-image-4 :target ~ .image-container {
+    left: -3072px;
+}
+
+slider-image-5 :target ~ .image-container {
+    left: -4096px;
+}
+
+slider-image-6 :target ~ .image-container {
+    left: -5120px;
+}
+
+slider-image-7 :target ~ .image-container {
+    left: -6144px;
+}
+
+slider-image-8 :target ~ .image-container {
+    left: -7168px;
+}
+
+*/
+
+/* Hero Slider */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+
+html {
+  border-top: 5px solid #fff;
+  
+  color: #2a2a2a;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+}
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+  width: 100%!important;
+  height: 530px!important
+  
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+    width:100%;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+
+
+
+
+/* Remediation System*/
+.remediation-system {
+    background-color: var(--hemp-green);
+    margin-top: 5rem;
+    display: flex;
+    justify-content:space-around;
+    box-shadow: 1rem 1rem 2rem 3rem var(--hemp-green);
+    
+}
+
+.system-components {
+    margin: auto;
+    margin: -3rem 0rem -2rem 1rem;    
+    width: 90%;
+    display: block;
+    align-items: center;
+    
+}
+
+.system-components-text {
+    background-color:var(--logo-green);
+    box-shadow:inset 0rem 0rem 1rem 0.2rem var(--dark-green); /*искам да направя сянка от вътрешната страна на заглавията на стъпките*/
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 2.3rem; /* на 2.4rem се "бъгва"*/
+    text-align: center;
+    text-decoration:none;
+    color:whitesmoke;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica; /*как да сложа моя си font*/
+}
+
+.step-1.step-2.step-3.step-4 {
+    display: flex;
+    flex-direction: column;
+}
+/* Remediation System*/
+
+/* Remediation Form*/
+.remediation-forms {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}  
+
+/*#icon-1#icon-2#icon-3 {
+    width: 10rem;
+} 
+Защо това не действа? как мога да селектирам няколко класа едновременно?*/
+
+#icon-1 {
+    width: 20rem;
+    margin: auto;
+    display:flex;
+
+}
+
+#icon-2 {
+    width: 20rem;
+    margin: auto;
+    display:flex;
+}
+
+#icon-3 {
+    width: 20rem;
+    margin: auto;
+    display:flex;
+}
+
+.booking-form {
+    width: 50rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.project-preparation {
+    width: 50rem;
+    margin: auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.construction-brigade {
+    width: 50rem;
+    margin: auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+div.booking-form p {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+div.project-preparation p {
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+div.construction-brigade p {
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.button-1 {
+    margin: auto;
+    margin-top: 3rem;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color: var(--logo-green);
+    color: whitesmoke;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 0.45rem 0.5rem var(--dark-green);
+
+}
+
+/* АRT Brigade*/
+
+
+#graffity-background-img {
+    border-radius: 0rem 0rem 50% 50%;
+    width: 100%;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 70%, black 10%);
+    mask-image: linear-gradient(to bottom, transparent 20%, black 125%);
+
+}
+
+#button-2 {
+    width: 20rem;
+    min-height: 5rem;
+    border-radius: 10rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    
+
+}
+
+.art-brigade {
+    position: relative;
+    margin: 60rem 0rem 0rem 0rem ;
+}
+
+.button-2-container {
+    position: absolute;
+    top:35%;
+    right:50%;
+    margin-right: -10rem;
+}
+
+.alpinist-img {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top:-120rem;
+}
+
+.art-brigade h1 {
+    margin: auto;
+    font-size: 15rem;
+    position: absolute;
+    top:-37rem;
+    left:21%;
+    text-align: center;
+}
+
+.art-brigade p {
+    position: absolute;
+    width: 50rem;
+    font-size: 2rem;
+    top:-15rem;
+    left:25%;
+    color: var(--dark-green);
+    text-align: justify;
+}
+
+.footer-containr {
+    width: ;
+    background-color: var(--dark-green);
+}
+
+
+
+/* АRT Brigade*/

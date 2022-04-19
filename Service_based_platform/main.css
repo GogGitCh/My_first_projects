@@ -1,0 +1,117 @@
+* {
+    margin: auto;
+    box-sizing: border-box;
+    
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans&display=swap');
+
+/* BtoC background */
+h1 {
+    font-size: 55pt;
+    
+    font-family: 'Courgette';
+    
+}
+
+.BtoC-container h1 {
+    text-shadow: 1rem 1rem 1rem 1rem red;
+}
+
+.BtoC-container {
+    width: 100%;
+   /* background-color:firebrick;*/
+    
+}
+
+.BtoC-container h1 {
+    text-align: center;
+    width: 65%;
+    padding: 3% 0% 3% 0%;
+    position: relative;
+
+}
+
+.background-decoration-people-cloud {
+    width: 500px;
+    display: flex;
+    margin: 0% auto 0% auto;
+}
+
+.background-decoration-rings {
+    position: absolute;
+    top: -40%;
+    left: -50%;
+    width: 200%;
+    z-index: -99;
+    transform: scaleX(-1);
+}
+
+/* BtoC background */
+
+/* BtoC A Side */
+
+.BtoC-A-Side {
+    position: absolute;
+    top: 60%;
+    
+}
+
+.bussines-1 {
+    
+    position: relative;
+        
+}
+
+.presentation-pad {
+    width: 160%;
+    position: relative;
+}
+
+.active-inactive {
+    position: absolute;
+    top: 7px;
+    left: 404px;
+    width: 36px;
+    
+}
+
+.active, .inactive {
+    width: 100%;
+    
+}
+
+.inactive {
+    transform: scaleX(-1);
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+.inactive:hover {
+    opacity: 0;
+    transition-duration: 700ms;
+    content: hidden;
+    cursor:pointer;
+}
+
+.pad-icon {
+    opacity: 0.8;
+    width: 33%;
+    top: 21%;
+    left:115%;
+    position: absolute;
+    
+}
+
+.pad-icon:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition-duration: 700ms;
+    /* transform: scale(1,1); защо не баца?*/
+    width: 35%;
+    top: 20%;
+    left: 114%;}
+
+/* BtoC A Side */
